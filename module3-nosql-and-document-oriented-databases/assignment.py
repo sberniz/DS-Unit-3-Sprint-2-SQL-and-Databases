@@ -42,7 +42,7 @@ client = pymongo.MongoClient(connecting)
 db = client.test
 
 # insert rpg_characters 
-# db.test.insert_many(rpg_all_docs_assignment)
+db.test.insert_many(rpg_all_docs_assignment)
 
 printer = list(db.test.find({'doc_type':'rpg_character'}))
 
